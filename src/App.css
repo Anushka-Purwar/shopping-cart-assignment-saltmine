@@ -99,3 +99,10 @@
   text-align: right;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: transparent; /* or set to the desired default style */
+}
