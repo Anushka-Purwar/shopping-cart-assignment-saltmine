@@ -1,39 +1,40 @@
-### Shopping Cart Application
+# Shopping Cart Application
 This project implements a shopping cart system with features such as adding/removing items, updating quantities, and calculating subtotals, taxes, and total costs. It is built using React, TypeScript, and Jest for testing. The cart interacts with an external API to fetch product prices and updates the cart state accordingly.
 
-# Features
+### Features
 -  **Add to Cart** : Users can add products to the cart, specifying the quantity.
 - **Remove from Cart** : Users can remove items from the cart by reducing the quantity or completely removing the item.
 - **Quantity Update** : Users can increase or decrease the quantity of an item in the cart.
 - **Subtotal, Tax, and Total Calculation** : The cart automatically calculates the subtotal (price * quantity), tax (based on a 12.5% tax rate), and total (subtotal + tax).
 
-# Assumptions
+### Assumptions
 - **Price API** : The price of products is fetched from an external API. This API returns the price for each product when queried by its name. For testing purposes, this API is mocked using Jest.
 - **Tax Rate** : A fixed tax rate of 12.5% is applied to the cart's subtotal.
 - **Cart Persistence** : The cart is temporarily stored in memory during the session. Once the page is refreshed, the cart state is reset.
 
-# Tradeoffs
+### Tradeoffs
 - **State Management** : The cart state is managed using simple local component state and is not persisted across page reloads. A more robust solution could involve using something like Redux or Context API for state management and local storage for persistence.
 - **API Mocking** : For testing purposes, the external API for fetching product prices is mocked. In a production system, this would need to be a live API integration.
 - **UI/UX** : The user interface is minimalistic and functional but could be enhanced with additional UI/UX features such as animations, cart item previews, or a more responsive layout for various screen sizes.
 
 ## Setup Instructions
 
-
-# Clone the Repository
+### Clone the Repository
 `git clone` -- repo link
 
 `cd shopping-cart-assignment`
 
-# Install Dependencies
+### Install Dependencies
 
 `npm install` or `yarn install`
 
-# Running the Application
+
+## Running the Application
 
 - Running Price API `npm run serve-products`
 - Running project `npm run dev`
 - Running JEST `npm jest`
+
 
 ## How to Test
 
