@@ -22,8 +22,6 @@ This project implements a shopping cart system with features such as adding/remo
 ### Clone the Repository
 `git clone` -- repo link
 
-`cd shopping-cart-assignment`
-
 ### Install Dependencies
 
 `npm install` or `yarn install`
